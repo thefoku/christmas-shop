@@ -1,0 +1,817 @@
+html, body {
+  margin:0px;
+  padding:0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  color:#fff;
+  scroll-behavior: smooth;
+}
+
+.btn {
+    margin:auto;
+    width:235px;
+    height:56px;
+    border-radius:20px;
+    background: #181C29;
+    border:none;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color:#fff;
+}
+
+.btn span {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    color:#fff;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+.btn:hover span {
+    color:#181C29;
+}
+
+.italic {
+    font-family: Allura;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: none;
+}
+
+/*Header*/
+.page-header{
+    width:1276px;
+    display:flex;
+    margin:0px auto;
+    margin-left:auto;
+    margin-right:auto;
+    box-sizing: border-box;
+}
+
+.logo-container-link {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding:8px 18px;
+    text-decoration: none;
+    color: #181C29;
+    margin-top:12px;
+    margin-bottom:12px;
+}
+
+.header-logo-container p {
+    margin:0;
+}
+
+.header-logo {
+    margin-right:8px;
+    display: block;
+}
+
+.nav-menu {
+    margin-left:auto;
+    margin-right:8px;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-menu-list {
+    list-style: none;
+    margin:0;
+    padding:8px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu-item {
+    margin-right:8px;
+}
+.nav-menu-item a {
+    color: var(--Dark, #181C29);
+    text-decoration: none;
+    padding:12px 20px;
+    background:transparent;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-menu-item a:hover {
+    background: var(--Primary-10, #FF46461A);
+    color: var(--Primary, #FF4646);
+    border-radius:12px;
+}
+
+.nav-menu-item.non-active {
+    pointer-events: none;
+}
+
+.nav-menu-item:last-child {
+    margin-right:0px;
+}
+
+/* #about, #footer, #best-gifts {
+    scroll-behavior: smooth;
+} */
+
+/*Hero Section*/
+.hero {
+    width:1440px;
+    height:524px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #FF4646; 
+    background-image: url('https://rolling-scopes-school.github.io/thefoku-JSFE2024Q4/christmas-shop/img/bg-snow.png'), url('https://rolling-scopes-school.github.io/thefoku-JSFE2024Q4/christmas-shop/img/bg-ball.png');
+    background-size: cover;
+    background-position:center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 426px;
+    padding: 120px 0px 60px;
+}
+
+.hero h1 {
+font-size: 32px;
+font-weight: 600;
+line-height: 150%;
+letter-spacing: 0.18em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin:0px;
+margin-bottom:12px;
+}
+
+.hero-italic-1 {
+    order:-1;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    margin-top:0px;
+    margin-bottom:12px;
+    text-transform: none;
+}
+
+.hero-italic-2 {
+    text-align: center;
+    text-decoration-skip-ink: none;
+    text-transform: none;
+}
+
+/*About*/
+.about {
+    width:1440px;
+    /* height:648px; */
+    margin:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:60px;
+    padding-bottom:60px;
+    background-color: #FF4646;
+    background-image: url('https://rolling-scopes-school.github.io/thefoku-JSFE2024Q4/christmas-shop/img/bg-snow.png');
+    background-size: cover;
+    background-position:center;
+}
+
+.about-container {
+    display:flex;
+    width:1276px;
+    margin:auto;
+    background:#fff;
+    border-radius:20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 100px 60px;
+    width:426px;
+}
+
+.about-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-align: left;
+    color:#181C29;
+    margin:0px;
+    margin-bottom:20px;
+}
+
+.about-italic {
+    margin-top:60px;
+    margin-bottom:20px;
+    text-align: left;
+    color:#FF4646;
+    text-transform: none;
+    order:-1;
+}
+
+.about-content-text {
+    margin:0px;
+    margin-bottom:60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+    color: #181C29;
+    text-transform: none;
+}
+
+.about-img {
+    border-radius:20px;
+}
+
+.slider {
+    width:1440px;
+    margin:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding:60px 0px;
+    background-color: #FF4646;
+    background-image: url('https://rolling-scopes-school.github.io/thefoku-JSFE2024Q4/christmas-shop/img/bg-snow.png');
+    background-size: cover;
+    background-position:center;
+}
+
+.slider-container {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.slider-header {
+    display: flex;
+    flex-direction: column-reverse;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    width:426px;
+}
+
+.slider-header h2 {
+    margin:0;
+    margin-bottom:20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-align: center;
+}
+
+.slider-italic {
+    margin:0px;
+    margin-bottom:12px;
+}
+
+.slider-list {
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    overflow: auto;
+    width: 100%;
+}
+
+.slider-list::-webkit-scrollbar {
+    display: none;
+  }
+
+.slider-item:first-child {
+    margin-left:82px;
+}
+
+.slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+}
+
+.slider-item p {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 97.52px;
+    text-align: center;
+    margin-right:20px;
+}
+
+.slider-item img {
+    border-radius: 20px;
+    /* transition: filter 0.2s ease-in-out; */
+    -webkit-transition : -webkit-filter 0.2s linear;
+}
+
+.slider-controls {
+    display:flex;
+    margin-right:82px;
+    justify-content: end;
+}
+
+.slider-btn {
+    border:1px solid #fff;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.slider-btn:hover {
+    background-color:#fff;
+}
+
+.slider-btn:hover img {
+    -webkit-filter: brightness(0) saturate(100%) invert(60%) sepia(76%) saturate(5304%) hue-rotate(334deg) brightness(101%) contrast(97%);
+    /* filter: brightness(0) saturate(100%) invert(60%) sepia(76%) saturate(5304%) hue-rotate(334deg) brightness(101%) contrast(97%); */
+}
+
+.slider-btn:first-child {
+    margin-right:20px;
+}
+
+.slider-btn img {
+    width:100%;
+    height:100%;
+    opacity:1;
+    display: block;
+}
+
+.slider-btn.disabled {
+    border: 1px solid #FFFFFF66;
+    opacity: 0.4;
+    pointer-events: none;
+}
+.slider-btn.active img {
+    opacity: 1;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+
+
+
+/*Best Gifts*/
+
+
+
+.best-gifts {
+    width:1440px;
+    margin:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding:60px 0px;
+    background-color: #FF4646;
+    background-image: url('https://rolling-scopes-school.github.io/thefoku-JSFE2024Q4/christmas-shop/img/bg-snow.png');
+    background-size: cover;
+    background-position:center;
+}
+
+.best-gifts.gifts-page {
+    background-size: contain;
+    background-position: top;
+    background-repeat:no-repeat;
+    background-color: #FF4646;
+    background-image: url('https://rolling-scopes-school.github.io/thefoku-JSFE2024Q4/christmas-shop/img/bg-garland.png');
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.best-gifts-container {
+    width:1276px;
+    margin:0;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.best-gifts-header {
+    display: flex;
+    flex-direction: column-reverse;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    width: 426px;
+}
+
+.best-gifts-header h1 {
+    margin:0;
+    margin-bottom:20px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.18em;
+    text-align: center;
+}
+
+.best-gifts-header h2 {
+    margin:0px;
+    margin-bottom:20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-align: center;
+}
+
+.best-gifts-italic {
+    margin:0;
+    margin-bottom: 12px;
+}
+
+.best-gifts-cards-list {
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.best-gifts-card {
+    width:310px;
+    /* margin-right:12px; */
+    background: linear-gradient(#ECF3F8 0%, #ECF3F8 25%, #ECF3F8 50%, #ECF3F8 75%, #fff 75%, #FFFFFF 100%);
+    /*
+    background: linear-gradient(to bottom ,#ECF3F8 0%, #ECF3F8 70%, #fff 70% #fff 100%);
+    background-color: #ECF3F8; */
+    border-radius:20px;
+}
+
+.best-gifts-card:last-child {
+    margin-right:0px;
+}
+
+.bg-card-inner {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding:20px;
+    height: 72px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.bg-card-inner h3 {
+    margin:0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24.32px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: #181C29;
+    transition: color 0.2s ease-in-out;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.best-gifts-card:hover h3 {
+    color:#FF4646;
+}
+
+.bg-card-inner h4 {
+    margin:0;
+    margin-bottom:8px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.for-work {
+    color:#4361FF;
+}
+
+.for-health {
+    color: #06A44F;
+}
+
+.for-harmony {
+    color: #FF43F7;
+}
+
+.bg-link {
+    text-decoration: none;
+}
+
+/*Best Gifts Page*/
+
+.best-gifts-tabs-container {
+    /* width:426px; */
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.best-gifts-tabs-list {
+    margin:0;
+    margin-bottom:20px;
+    padding:0;
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.best-gifts-tabs-item a {
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    padding:12px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    border-radius:12px;
+    transition: background 0.5s ease-in-out;
+}
+
+.best-gifts-tabs-item a:hover {
+    background:  #FFFFFF33;
+}
+
+
+.best-gifts-tabs-item.active-tab a {
+    pointer-events: none;
+    background:  #FFFFFF33;
+
+}
+
+
+/*Countdown Section*/
+
+.countdown-section {
+    width:1440px;
+    margin:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding:60px 0px;
+    background-color: #FF4646;
+    background-image: url('https://rolling-scopes-school.github.io/thefoku-JSFE2024Q4/christmas-shop/img/bg-snow.png'), url('https://rolling-scopes-school.github.io/thefoku-JSFE2024Q4/christmas-shop/img/bg-forest.png');
+    background-size: cover;
+    background-position:center;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.countdown-container {
+    width:426px;
+    margin:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+.countdown-header h2 {
+    margin:0;
+    margin-bottom:20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-align: center;
+}
+
+.countdown-btn {
+    margin-bottom:20px;
+}
+
+.countdown-italic {
+    margin:0;
+    margin-bottom:8px;
+}
+
+.countdown {
+    width:344px;
+    background: #FFFFFF66;
+    border-radius:20px;
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+    padding:8px 0px 12px 0px;
+    position: relative;
+    justify-content: center;
+}
+
+.countdown-item {
+    width:80px;
+    display: block;
+    /* margin-left:auto;
+    margin-right: auto;; */
+}
+
+.countdown-time {
+    margin:0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-align: center;
+}
+
+.countdown-text {
+    margin:0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.countdown-delimiter {
+    display: block;
+    height:20px;
+    width:1px;
+    background-color:#fff;
+    align-self: center;
+}
+
+.page-footer {
+    width:1440px;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:60px;
+}
+
+.footer-cards {
+    margin:0;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-card-list {
+    margin:0;
+    padding: 0;
+    width: 1276px;
+    list-style: none;
+    display: flex; 
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.footer-card-item {
+    display: flex;
+    flex-direction: column;
+    width: 417.33px;
+    transition: color 0.2s ease-in-out;
+    background-color: #ECF3F8;
+    border-radius: 20px;
+    margin-right:12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-card-item:last-child {
+    margin-right:0px;
+}
+
+.footer-card-item img {
+    margin:0;
+    margin-bottom:12px;
+}
+
+.footer-card-item a {
+    text-decoration: none;
+    color:#181C29;
+    padding: 20px 64px;
+    margin:0;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-card-item h3 {
+    margin:0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24.32px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color:#181C29;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-card-item-text {
+    margin:0;
+    margin-bottom:12px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-align: center;
+    color:#181C29;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-card-item:hover .footer-card-item-text,
+.footer-card-item:hover h3 {
+    color: #FF4646;
+}
+
+
+.footer-socials-list {
+    width:196px;
+    display: flex;
+    margin:0 auto;
+    justify-content: center;
+    margin-bottom:12px;
+}
+
+.footer-socials-item {
+    display: block;
+    width:40px;
+    height:40px;
+    margin-right:12px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-socials-item a:last-child {
+    margin-right:0px;
+}
+
+.footer-socials-item a {
+    display:block;
+    text-align: center;
+}
+
+.social-img {
+    display:block;
+    padding: 8px;
+    transition: -webkit-filter 0.2s ease-in-out;
+}
+
+.footer-socials-item:hover .social-img {
+    -webkit-filter: brightness(0) saturate(100%) invert(60%) sepia(76%) saturate(5304%) hue-rotate(334deg) brightness(101%) contrast(97%);
+    /* filter: brightness(0) saturate(100%) invert(60%) sepia(76%) saturate(5304%) hue-rotate(334deg) brightness(101%) contrast(97%); */
+}
+
+.footer-copyright {
+    margin:0px;
+    margin-bottom:12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+    text-align: center;
+    color:#181C29;
+    text-transform: none;
+}
+
+.footer-italic {
+    margin:0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: none;
+    color:#181C29;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-rs-link {
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-rs-link:hover .footer-italic {
+    color:#FF4646;
+}
